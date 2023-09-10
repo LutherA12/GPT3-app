@@ -40,7 +40,7 @@ function WhatGPT3() {
   };
 
   return (
-    <div className="gpt3__whatgpt3 section__margin" id="whpt3">
+    <div className="gpt3__whatgpt3 section__margin" id="wgpt3">
       <div className="gpt3__whatgpt3-feature">
         <Feature title={info.titleOne} text={info.textOne} />
       </div>
