@@ -1,5 +1,11 @@
 import "./brand.styles.scss";
-import { google, slack, atlassian, shopify, dropbox } from "./imports.jsx";
+import {
+  google,
+  slack,
+  atlassian,
+  shopify,
+  dropbox,
+} from "../../assets/imports.jsx";
 
 function Brand() {
   const pictures = {
