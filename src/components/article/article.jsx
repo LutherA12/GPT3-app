@@ -1,10 +1,7 @@
 import "./article.styles.scss";
+import { ArticleInfo } from "../../simpleConstants/simpleConstants";
 
 function Article({ imgUrl, date, title }) {
-  const info = {
-    text: `Read Full Article`,
-  };
-
   return (
     <div className="gpt3__blog-container_article">
       <div className="gpt3__blog-container_article-image">
@@ -15,7 +12,7 @@ function Article({ imgUrl, date, title }) {
           <p>{date}</p>
           <h3>{title}</h3>
         </div>
-        <p>{info.text}</p>
+        <p>{ArticleInfo.text}</p>
       </div>
     </div>
   );

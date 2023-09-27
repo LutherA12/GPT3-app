@@ -1,30 +1,18 @@
 import "./possibility.styles.scss";
-import possibilityImage from "../../assets/possibility.png";
+import { PossibilityInfo } from "../../simpleConstants/simpleConstants";
 
 function Possibility() {
-  const info = {
-    title: `Request Early Access to Get Started`,
-    subtext: `The possibilities are beyond your imagination!!`,
-    text: `
-        We've tried to save the best for last, but we really believe in our
-        product! We know that virtual reality is still in it's infant stages,
-        but imagine it: go anywhere, do anything, be anyone, gain knowledge
-        beyond what you could without it, there is no limit to what you could
-        acheve!`,
-    image: possibilityImage,
-  };
-
   return (
     <div className="gpt3__possibility section__padding" id="possibility">
       <div className="gpt3__possibility-image">
-        <img src={info.image} alt="image not found" />
+        <img src={PossibilityInfo.image} alt="image not found" />
       </div>
 
       <div className="gpt3__possibility-content">
-        <h4>{info.title}</h4>
-        <h1 className="gradient__text">{info.subtext}</h1>
-        <p>{info.text}</p>
-        <h4>{info.title}</h4>
+        <h4>{PossibilityInfo.title}</h4>
+        <h1 className="gradient__text">{PossibilityInfo.subtext}</h1>
+        <p>{PossibilityInfo.text}</p>
+        <h4>{PossibilityInfo.title}</h4>
       </div>
     </div>
   );

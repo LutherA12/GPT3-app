@@ -1,31 +1,10 @@
 import "./navbar.styles.scss";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import { useState } from "react";
-import logo from "../../assets/logo.svg";
+import { logo } from "../../simpleConstants/simpleConstants.jsx";
+import { navlinks } from "../../simpleConstants/simpleConstants.jsx";
 
 function Navbar() {
-  const navlinks = {
-    menu: (
-      <>
-        <p>
-          <a href="#home">Home</a>
-        </p>
-        <p>
-          <a href="#wgpt3">What is GPT?</a>
-        </p>
-        <p>
-          <a href="#possibility">Open AI</a>
-        </p>
-        <p>
-          <a href="#features">Case Studies</a>
-        </p>
-        <p>
-          <a href="#blog">Library</a>
-        </p>
-      </>
-    ),
-    info: [`Sign In`, `Sign Up`],
-  };
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
@@ -38,9 +17,11 @@ function Navbar() {
         <div className="gpt3__navbar-links_container">{navlinks.menu}</div>
       </div>
 
-      <div className="gpt3__navbar-sign">
-        <p>{navlinks.info[0]}</p>
-        <button type="button">{navlinks.info[1]}</button>
+      <div>
+        <form className="gpt3__navbar-sign">
+          <p>{navlinks.info[0]}</p>
+          <button type="submit">{navlinks.info[1]}</button>
+        </form>
       </div>
 
       <div className="gpt3__navbar-menu">

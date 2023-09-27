@@ -1,69 +1,48 @@
 import "./footer.styles.scss";
-import { logo } from "../../assets/imports";
+import { FooterInfo } from "../../simpleConstants/simpleConstants.jsx";
 
 function Footer() {
-  const info = {
-    heading: `Do you want to step into the future before others?`,
-    subtext: `Request Early Access`,
-    gpt3Logo: logo,
-    address: `Obscure GPT3 141 Main St, Citytown, USA, All Rights Reserved`,
-    footlinks: [`Links`, `Overrons`, `Social Media`, `Counters`, `Contact`],
-    companylinks: [
-      `Company`,
-      `Terms & Conditions`,
-      `Privacy Policy`,
-      `About Us`,
-    ],
-    contactlinks: [
-      `Get In Touch`,
-      `141 Main St, Citytown, USA`,
-      `1-800-722-6564`,
-      `gpt3@info.net`,
-    ],
-    copyright: <>&copy; 2021 GPT-3 All Rights Reserved</>,
-  };
-
   return (
     <div className="gpt3__footer section__padding">
       <div className="gpt3__footer-heading">
-        <h1 className="gradient__text">{info.heading}</h1>
+        <h1 className="gradient__text">{FooterInfo.heading}</h1>
       </div>
 
       <div className="gpt3__footer-btn">
-        <p>{info.subtext}</p>
+        <p>{FooterInfo.subtext}</p>
       </div>
 
       <div className="gpt3__footer-links">
         <div className="gpt3__footer-links_logo">
-          <img src={info.gpt3Logo} alt="image not found" />
-          <p>{info.address}</p>
+          <img src={FooterInfo.gpt3Logo} alt="image not found" />
+          <p>{FooterInfo.address}</p>
         </div>
 
         <div className="gpt3__footer-links_div">
-          <h4>{info.footlinks[0]}</h4>
-          <p>{info.footlinks[1]}</p>
-          <p>{info.footlinks[2]}</p>
-          <p>{info.footlinks[3]}</p>
-          <p>{info.footlinks[4]}</p>
+          <h4>{FooterInfo.footlinks[0]}</h4>
+          <p>{FooterInfo.footlinks[1]}</p>
+          <p>{FooterInfo.footlinks[2]}</p>
+          <p>{FooterInfo.footlinks[3]}</p>
+          <p>{FooterInfo.footlinks[4]}</p>
         </div>
 
         <div className="gpt3__footer-links_div">
-          <h4>{info.companylinks[0]}</h4>
-          <p>{info.companylinks[1]}</p>
-          <p>{info.companylinks[2]}</p>
-          <p>{info.companylinks[3]}</p>
+          <h4>{FooterInfo.companylinks[0]}</h4>
+          <p>{FooterInfo.companylinks[1]}</p>
+          <p>{FooterInfo.companylinks[2]}</p>
+          <p>{FooterInfo.companylinks[3]}</p>
         </div>
 
         <div className="gpt3__footer-links_div">
-          <h4>{info.contactlinks[0]}</h4>
-          <p>{info.contactlinks[1]}</p>
-          <p>{info.contactlinks[2]}</p>
-          <p>{info.contactlinks[3]}</p>
+          <h4>{FooterInfo.contactlinks[0]}</h4>
+          <p>{FooterInfo.contactlinks[1]}</p>
+          <p>{FooterInfo.contactlinks[2]}</p>
+          <p>{FooterInfo.contactlinks[3]}</p>
         </div>
       </div>
 
       <div className="gpt3__footer-copyright">
-        <p>{info.copyright}</p>
+        <p>{FooterInfo.copyright}</p>
       </div>
     </div>
   );
